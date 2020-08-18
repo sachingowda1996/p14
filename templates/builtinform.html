@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builtin Form</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <!--{{form.as_p}}-->
+        <!--<table border="2px">
+            {{form.as_table}}
+        </table>-->
+        <ul>
+            {{form.as_ul}}
+        </ul>
+        <input type="submit" values="SUBMIT">            
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiselect and checkboxes</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="languages">choose your language:</label>
+        <select name="language" id="languages" multiple>
+            <option value="python">python</option>
+            <option value="c++">c++</option>
+            <option value="c">c</option>
+            <option value="asp.net">asp.net</option>
+            <option value="php">php</option>
+            <option value="sap">sap</option>
+            <option value="datascience">datascience</option>
+        </select><br>
+        <h6>choose your food</h6>
+        <label for="idli">
+            Idli
+        </label>
+        <input type="checkbox" name="food" id="idli" value="Idli">
+        <label for="vada">
+            vada
+        </label>
+        <input type="checkbox" name="food" id="vada" value="vada">
+        <label for="chiken65">
+            chiken65
+        </label>
+        <input type="checkbox" name="food" id="chiken65" value="chiken65">
+        <label for="pepperrice">
+            pepperrice
+        </label>
+        <input type="checkbox" name="food" id="pepperrice" value="pepperrice">
+        <label for="fish kabab">
+            fish kabab
+        </label>
+        <input type="checkbox" name="food" id="fish kabab" value="fish kabab">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
